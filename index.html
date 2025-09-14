@@ -146,6 +146,10 @@
                             pr aapke jagha mai kisiko nhi dene vala hamesa wait krte rhunga.
                             kabhi toh wapis aaoge 😄🤭. Happy Birthday pyari chudail 🫀
                         </h2>
+                        <!-- 👇 new added for 2nd letter -->
+                        <div class="text__letter" style="display:none;">
+                         <p></p>
+                          </div>
 
                         <div class="imageCute2">
                             <img src="cute2.png" alt="">
@@ -170,6 +174,7 @@
     let date__of__birth = document.querySelector(".date__of__birth span");
     let text__letter = document.querySelector(".text__letter p");
     setTimeout(function () {
+        document.querySelector(".text__letter").style.display = "block";
         timeDatetxt = setInterval(function () {
             if (currentIndex < charArrDate.length) {
                 date__of__birth.textContent += charArrDate[currentIndex];
